@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     if ("#companySize" + "#companyComplexity" + "#companyPreference" === 3) {
       $('rubyOnRails').show();
-    } else if("#companySize" + "#companyComplexity" + "#companyPreference" > 3) {
+    } else if("#companySize" + "#companyComplexity" + "#companyPreference" > 3 <6) {
       $('cSharp').show();
     } else {("#companySize" + "#companyComplexity" + "#companyPreference" >= 6)
       $('java').show();
