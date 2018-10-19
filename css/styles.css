@@ -8,8 +8,10 @@
   display: none;
 }
 .btn{
-  display: block;
+
+  text-align: center;
 }
 .container{
   padding: 50;
+  text-align: center;
 }
