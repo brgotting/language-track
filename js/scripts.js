@@ -1,20 +1,18 @@
 $(document).ready(function() {
-  $("form#quiz").submit(function(event) {
-    var size = parseInt($("input#companySize").val());
-    var complexity = parseInt($("option#companyComplexity").val());
+  $("#quiz").submit(function(event) {
+    var companySize = parseInt($("option#companySize").val());
+    var companyComplexity = parseInt($("option#companyComplexity").val());
     var companyPreference = parseInt($("option#companyPreference").val());
+     $("#output").text(result);
 
 
-    if (companySize + companyComplexity + companyPreference === 3) {
+    if ("companySize" + "companyComplexity" + "companyPreference" === 3) {
       $('#rubyOnRails').show();
-    } else if(companySize + companyComplexity + companyPreference > 3) {
+    } else if("companySize" + "companyComplexity" + "companyPreference" > 3) {
       $('#cSharp').show();
-    } else if(companySize + companyComplexity + companyPreference >= 6) {
+    } else("companySize" + "companyComplexity" + "companyPreference" >= 6) {
       $('#java').show();
     }
     event.preventDefault();
   });
-
-
-
 });
