@@ -13,7 +13,28 @@
       <h1>What programming language should you learn?</h1>
         <p>Take this questionnaire to find out!</p>
         <form id="quiz">
-          <h2>What size company are you interested in working at?</h2>
+<p>What size company would you like to work at?</p>
+          <select class="form-control" id="companySize">
+
+  <option value="1">Small</option>
+  <option value="2">Large</option>
+</select>
+<p>Would you like to work at a simple or complex company?</p>
+<select class="form-control" id="companyComplexity">
+
+  <option value="1">Simple</option>
+  <option value="2">Complex</option>
+</select>
+<p>Which company could you see yourself working at?</p>
+<select class="form-control" id="companyPreference">
+
+  <option value="1">Airbnb</option>
+  <option value="2">Microsoft</option>
+  <option value="3">Google</option>
+</select>
+
+
+          <!-- <h2>What size company are you interested in working at?</h2>
           <label><input type="radio" name="q1" value="c1">
            Small
          </label><br />
@@ -34,22 +55,14 @@
        <label><input type="radio" name="q1" value="c2">
          Microsoft
        </label><br />
-       <label><input type="radio" name="q1" value="c2">
+       <label><input type="radio" name="q1" value="c3">
          Google
        </label><br />
        <button type="submit" id="submit" onclick="tabulateAnswers()">Submit Answers</button>
-       <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+       <button type="reset" id="reset" onclick="resetAnswer()">Reset</button> -->
      </form>
      <div id="answer">Your result will show up here!</div>
    </div>
-
-
-
-
-
-    </div>
-    <button id="submit">Submit Answers</button>
-    <div id=results>
 
     </div>
 
