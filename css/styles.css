@@ -1,3 +1,12 @@
-#rubyOnRails, #cSharp, #java {
+.rubyOnRails{
   display: none;
+}
+.cSharp{
+  display: none;
+}
+.java{
+  display: none;
+}
+.btn{
+  display: block;
 }
