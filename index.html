@@ -9,7 +9,43 @@
     <title>Learning a Programming Language</title>
   </head>
   <body>
-    <div id="quiz">
+    <div id="wrapper">
+      <h1>What programming language should you learn?</h1>
+        <p>Take this questionnaire to find out!</p>
+        <form id="quiz">
+          <h2>What size company are you interested in working at?</h2>
+          <label><input type="radio" name="q1" value="c1">
+           Small
+         </label><br />
+         <label><input type="radio" name="q1" value="c2">
+           Large
+         </label><br />
+         <h2>Are you more interested in simplicity, or complexity?</h2>
+         <label><input type="radio" name="q2" value="c1">
+          Simplicity
+        </label><br />
+        <label><input type="radio" name="q2" value="c2">
+          Complexity
+        </label><br />
+        <h2>Which company would you rather work for?</h2>
+        <label><input type="radio" name="q1" value="c1">
+         Airbnb
+       </label><br />
+       <label><input type="radio" name="q1" value="c2">
+         Microsoft
+       </label><br />
+       <label><input type="radio" name="q1" value="c2">
+         Google
+       </label><br />
+       <button type="submit" id="submit" onclick="tabulateAnswers()">Submit Answers</button>
+       <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+     </form>
+     <div id="answer">Your result will show up here!</div>
+   </div>
+
+
+
+
 
     </div>
     <button id="submit">Submit Answers</button>
