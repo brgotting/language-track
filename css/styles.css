@@ -1,16 +1,20 @@
-.rubyOnRails{
+#rubyOnRails{
   display: none;
 }
-.cSharp{
+
+#cSharp{
+  display: none;
+
+}
+#java{
   display: none;
 }
-.java{
-  display: none;
-}
+
 .btn{
 
   text-align: center;
 }
+
 .container{
   padding: 50;
   text-align: center;
