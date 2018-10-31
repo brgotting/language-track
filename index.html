@@ -11,9 +11,9 @@
   <body class="container">
     <h1>What programming language should you learn?</h1>
     <p>Take this questionnaire to find out!</p>
-    <form class="quiz">
+    <form id="quiz">
       <div class="form-group">
-        <h3>What size compnay would you like to work at?</h3>
+        <h3>What size company would you like to work at?</h3>
         <div class="radio">
           <label>
             <input type="radio" name="companySize" value="small">
@@ -67,20 +67,23 @@
             <br>
         <button id='submit' type="click" class="btn-success">Calculate Language</button>
       </div>
+      <input type="reset" id="configreset" value="Reset">
     </form>
-    <div id="resetButton">
-      <h3>Reset</h3>
-      <button id="reset" class="btn" type="click" name="button">Reset</button>
-    </div>
     <div class='container'>
       <div id="rubyOnRails">
         <p>Take Ruby</p>
+        <p>Ruby is a general-purpose, interpreted programming language. Ruby is a true object-oriented programming language. Ruby is a server-side scripting language similar to Python and PERL. Ruby can be used to write Common Gateway Interface (CGI) scripts.</p>
       </div>
       <div id="cSharp">
         <p>Take C#</p>
+        <p>C# is a general object-oriented programming (OOP) language for networking and Web development. C# is specified as a common language infrastructure (CLI) language. ... Its NET framework promotes multiple Web technologies. The term is sometimes spelled as C Sharp or C-Sharp.</p>
       </div>
       <div id="java">
         <p>Take Java</p>
+        <p>Java is a programming language that produces software for multiple platforms. When a programmer writes a Java application, the compiled code (known as bytecode) runs on most operating systems (OS), including Windows, Linux and Mac OS. Java derives much of its syntax from the C and C++ programming languages.</p>
+      </div>
+      <div id="invalid">
+        <p>Please answer all the questions. Thank you.</p>
       </div>
     </div>
   </body>

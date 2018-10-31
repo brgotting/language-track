@@ -10,12 +10,16 @@
   display: none;
 }
 
+#invalid{
+  display: none;
+}
+
 .btn{
 
-  text-align: center;
+  text-align: left;
 }
 
 .container{
   padding: 50;
-  text-align: center;
+  text-align: left;
 }

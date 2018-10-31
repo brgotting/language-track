@@ -9,7 +9,8 @@ var scoreCandy = 0;
 
 
 $(document).ready(function(){
-  $("form.quiz").submit(function(event){
+  $("form#quiz").submit(function(event){
+      event.preventDefault();
 
     var companySize = $("input:radio[name=companySize]:checked").val();
 
@@ -50,7 +51,7 @@ $(document).ready(function(){
       scoreLiberalOrConservative += 2;
     }
 
-    var candy = $("input:radio[name=scoreCandy]:checked").val();
+    var candy = $("input:radio[name=candy]:checked").val();
 
     if(candy === 'chocolate'){
       scoreCandy += 1;
@@ -68,26 +69,33 @@ $(document).ready(function(){
       $('#java').hide();
     }
 
-    else if (total > 5 <= 8){
+    else if (( total > 5 ) && ( total <= 8 )) {
       $('#cSharp').show();
       $('#rubyOnRails').hide();
       $('#java').hide();
     }
 
-    else if (total > 8){
+    else if ((total > 8) && (total <=10)) {
       $('#java').show();
       $('#cSharp').hide();
       $('#rubyOnRails').hide();
     }
 
-    event.preventDefault();
+    else if ( total < 5 ) {
+      $('#invalid').show();
+    }
+    console.log(total)
 
     });
 
-    $("form#reset").click(function(event) {
-    total = 0;
+//Reset Function
 
-    event.preventDefault();
+    $('#configreset').click(function(){
+      $('#java').hide();
+      $('#cSharp').hide();
+      $('#rubyOnRails').hide();
+      $('#invalid').hide();
+      document.getElementById("quiz").reset();
+      location.reload();
     });
   });
-});
